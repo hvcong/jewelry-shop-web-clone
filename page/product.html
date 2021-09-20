@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container" id="#container">
+        <div class="header">
+            <div class="header__top hide-on-tablet-mobile">
+                <div class="grid wide">
+                    <div class="header__top-wrap">
+                        <div href="#" class="header__top-logo">
+                            <a href="#" class="header__top-logo-link">
+                                <img src="../assets/image/logo1.png" class="header__top-logo-img" alt="">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav__item active">
+                                <a href="#" class="nav__link">Trang Chủ</a>
+                            </li>
+                            <li class="nav__item nav__item-nav-sub">
+                                <a href="#" class="nav__link">
+                                    Giới Thiệu
+                                    <i class="nav__link-icon nav__link-icon-down fas fa-chevron-down "></i>
+                                </a>
+                                <ul class="nav__sub arrow-up">
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Nhẫn</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Bông Tai</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Dây Chuyền</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Trang Sức</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Đồng Hồ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                        <div class="header__top-search">
+                            <i class="header__top-search-icon fas fa-search"></i>
+                            <div class="header__top-search-body arrow-up">
+                                <div class="header__top-search-group">
+                                    <input class="header__top-search-input" type="text" placeholder="Tìm kiếm..."
+                                        name="header__search" id="">
+                                    <button class="header__top-search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--begin header, nav, cart mobile + tablet -->
+            <div class="sm-header__top hide-on-pc">
+                <i class="fas fa-bars sm-header__nav-icon"></i>
+
+                <div class="sm-header__top-logo">
+                    <a href="#" class="sm-header__top-logo-link">
+                        <img src="../assets/image/logo1.png" class="sm-header__top-logo-img" alt="">
+                    </a>
+                </div>
+                <div class="sm-header__top-cart">
+                    <span class="sm-header__top-cart-num">
+                        0
+                    </span>
+                </div>
+            </div>
+            <div class="sm-header__nav-wrap hide-on-pc hide">
+                <ul class="sm-header__nav-list">
+                    <li class="sm-header__nav-item">
+                        <div class="sm-header__nav-group">
+                            <input class="sm-header__nav-search-input" type="text" placeholder="Tìm kiếm..."
+                                name="header__search" id="">
+                            <button class="sm-header__nav-search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">Trang chủ</a>
+                    </li>
+                    <li class="sm-header__nav-item active">
+                        <a href="#" class="sm-header__nav-link">giới thiệu</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">trang sức
+                            <i class="sm-header__nav-link-icon fas fa-chevron-down "></i>
+                        </a>
+                        <ul class="sm-header__subnav-list">
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Nhẫn</a>
+                            </li>
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Bông tai</a>
+                            </li>
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Dây chuyền</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">đồng hồ</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">liên hệ</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">đăng nhập</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <div class="sm-header__nav-media">
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <span class="sm-header__nav-close ">
+                    <i class="fas fa-times sm-header__nav-close-icon"></i>
+                </span>
+            </div>
+            <div class="sm-header__cart-wrap hide-on-pc hide">
+                <div class="sm-header__cart">
+                    <h2 class="sm-header__cart-heading">Giỏ hàng</h2>
+                    <span class="sm-header__cart-line"></span>
+                    <div class="sm-header__cart-list">
+                        <div class="sm-header__cart-item">
+                            <a href="#" class="sm-header__cart-item-link">
+                                <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            </a>
+                            <div class="sm-header__cart-item-body">
+                                <a href="#" class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA
+                                    CENTENARY
+                                    CHRONOMETER</a>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA CENTENARY
+                                    CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA CENTENARY
+                                    CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="../assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                    </div>
+                    <div class="sm-header__cart-total">
+                        Tổng phụ: <span class="sm-header__cart-total-num">2,288,000</span> đ
+                    </div>
+                    <button class="sm-header__cart-btn  sm-header__cart-btn-look">Xem giỏ hàng</button>
+                    <button class="sm-header__cart-btn  sm-header__cart-btn-pay">Thanh toán</button>
+
+                </div>
+                <span class="sm-header__nav-close ">
+                    <i class="fas fa-times sm-header__nav-close-icon"></i>
+                </span>
+            </div>
+            <!--end header, nav, cart mobile + tablet -->
+        </div>
+        <div class="main">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="main__top">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="direction">
+                                        <a href="#" class="direction-item">Trang Chủ</a> /
+                                        <a href="#" class="direction-item active">Trang Sức</a>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <div class="filter__select">
+                                        <span class="filter__select-lable hide-on-tablet-mobile"> Hiển thị 1–12 trong 17 kết quả
+                                        </span>
+                                        
+                                        <button class="sm-filter__select-bar hide-on-pc">
+                                            <i class="fas fa-bars sm-filter__select-bar-icon"></i>
+                                            <span class="sm-filter__select-bar-text">LỌC</span>
+                                        </button>
+
+                                        <div class="filter__select-input">
+                                            <div class="filter__select-input-text">Thứ tự mặc định</div>
+                                            <i class="fas fa-chevron-down filter__select-input-icon"></i>
+    
+                                            <div class="filter__select-options">
+                                                <div class="filter__select-option">Thứ tự theo mức độ phổ biến</div>
+                                                <div class="filter__select-option">Thứ tự theo mức độ đánh giá</div>
+                                                <div class="filter__select-option">Thứ tự theo giá: cao tới thấp</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-12 m-12 c-12">
+                        <div class="main__body">
+                            <div class="row">
+                                <div class="col l-3 m-0 c-0 sm-categories hide-on-tablet-mobile">
+                                    <div class="categories">
+                                        <div class="categories__item">
+                                            <h2 class="categories__title">DANH MỤC SẢN PHẨM</h2>
+                                            <div class="categories__body">
+                                                <ul class="categories__body-list">
+                                                    <li class="categories__body-item">
+                                                        <a href="#" class="categories__body-link">Nhẫn</a>
+                                                    </li>
+                                                    <li class="categories__body-item">
+                                                        <a href="#" class="categories__body-link">Nhẫn</a>
+                                                    </li>
+                                                    <li class="categories__body-item">
+                                                        <a href="#" class="categories__body-link">Nhẫn</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="categories__item">
+                                            <h2 class="categories__title">LỌC THEO GIÁ</h2>
+                                            <div class="categories__body categories__filter-range">
+                                                <div class="categories__body-range">
+                                                    <span class="categories__body-range-start"></span>
+                                                    <span class="categories__body-range-line"></span>
+                                                    <span class="categories__body-range-end"></span>
+                                                </div>
+                                                <div class="categories__body-price">
+                                                    Giá
+                                                    <span class="categories__body-price-start">475,333</span>
+                                                    <span class="categories__body-price-text">đ - </span>
+                                                    <span class="categories__body-price-end">705,036</span>
+                                                    <span class="categories__body-price-text">đ</span>
+                                                </div>
+                                                <a href="#" class="categories__body-btn">LỌC</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="categories__item">
+                                            <h2 class="categories__title">SẢN PHẨM KHÁC</h2>
+                                            <div class="categories__body">
+                                                <ul class="categories__body-products">
+                                                    <li class="categories__body-product">
+                                                        <a class="categories__body-product-image">
+                                                            <img src="../assets/image/home_product6.jpg"
+                                                                class="sm-header__cart-item-img" alt=""
+                                                                class="categories__body-product-img">
+                                                        </a>
+                                                        <div class="categories__body-product-body">
+                                                            <a href="#" class="categories__body-product-link">
+                                                                <p class="categories__body-product-name">SILVER OVERLAY
+                                                                    DIAMOND NECKLACE</p>
+                                                            </a>
+                                                            <span
+                                                                class="categories__body-product-price">1,333,000</span>
+                                                            <span class="categories__body-product-price-icon">đ</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="categories__body-product">
+                                                        <a class="categories__body-product-image">
+                                                            <img src="../assets/image/home_product6.jpg"
+                                                                class="sm-header__cart-item-img" alt=""
+                                                                class="categories__body-product-img">
+                                                        </a>
+                                                        <div class="categories__body-product-body">
+                                                            <a href="#" class="categories__body-product-link">
+                                                                <p class="categories__body-product-name">SILVER OVERLAY
+                                                                    DIAMOND NECKLACE</p>
+                                                            </a>
+                                                            <span
+                                                                class="categories__body-product-price">1,333,000</span>
+                                                            <span class="categories__body-product-price-icon">đ</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="categories__body-product">
+                                                        <a class="categories__body-product-image">
+                                                            <img src="../assets/image/home_product6.jpg"
+                                                                class="sm-header__cart-item-img" alt=""
+                                                                class="categories__body-product-img">
+                                                        </a>
+                                                        <div class="categories__body-product-body">
+                                                            <a href="#" class="categories__body-product-link">
+                                                                <p class="categories__body-product-name">SILVER OVERLAY
+                                                                    DIAMOND NECKLACE</p>
+                                                            </a>
+                                                            <span
+                                                                class="categories__body-product-price">1,333,000</span>
+                                                            <span class="categories__body-product-price-icon">đ</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="categories__body-product">
+                                                        <a class="categories__body-product-image">
+                                                            <img src="../assets/image/home_product6.jpg"
+                                                                class="sm-header__cart-item-img" alt=""
+                                                                class="categories__body-product-img">
+                                                        </a>
+                                                        <div class="categories__body-product-body">
+                                                            <a href="#" class="categories__body-product-link">
+                                                                <p class="categories__body-product-name">SILVER OVERLAY
+                                                                    DIAMOND NECKLACE</p>
+                                                            </a>
+                                                            <span
+                                                                class="categories__body-product-price">1,333,000</span>
+                                                            <span class="categories__body-product-price-icon">đ</span>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <span class="sm-categories-close">
+                                        <i class="fas fa-times sm-categories-close-icon"></i>
+                                    </span>
+                                </div>
+                                <div class="col l-9 m-12 c-12">
+                                    <div class="product__list">
+                                        <div class="row">
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product1.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product2.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product3.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product4.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product1.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product2.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product2.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product1.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product1.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-4 c-6">
+                                                <div class="product__item">
+                                                    <a href="#" class="product__link">
+                                                        <img class="product__image" src="../assets/image/product1.jpg">
+                                                    </a>
+                                                    <div class="product__body">
+                                                        <a href="#" class="product__link">
+                                                            <p class="product__name">BAND RING IN PLATINUM WITH DIAMONDS
+                                                            </p>
+                                                        </a>
+                                                        <div class="product__price">
+                                                            <div class="product__price-num">420,000</div>
+                                                            <span class="product__price-icon">đ</span>
+                                                        </div>
+                                                        <a href="#" class="product__btn">THÊM VÀO GIỎ</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col l-12 m-12 c-12">
+                                                <ul class="product__pagination">
+                                                    <li class="product__pagination-prev">
+                                                        <i
+                                                            class="fas fa-chevron-left product__pagination-next-icon"></i>
+                                                    </li>
+                                                    <li class="product__pagination-page">1</li>
+                                                    <li class="product__pagination-page active">2</li>
+                                                    <li class="product__pagination-page">3</li>
+                                                    <li class="product__pagination-page product__pagination-page-dots">
+                                                        ...</li>
+                                                    <li class="product__pagination-page">12</li>
+                                                    <li class="product__pagination-next">
+                                                        <i
+                                                            class="fas fa-chevron-right product__pagination-next-icon"></i>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-6 sm-order-2  c-12">
+                        <div class="footer__item">
+                            <img src="../assets/image/footer1.png" alt="" class="footer__item-img">
+                            <h3 class="footer__item-title">ĐỊA CHỈ</h3>
+                            <p class="footer__item-disc">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                            <div class="footer__item-links">
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-facebook"></i>
+                                    <span class="footer__item-link-messa">Follow on Facebook</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-instagram"></i>
+                                    <span class="footer__item-link-messa">Follow on Instagram</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-twitter-square"></i>
+                                    <span class="footer__item-link-messa">Follow on Twitter</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-youtube"></i>
+                                    <span class="footer__item-link-messa">Follow on Youtobe</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-10 c-o-1">
+                        <div class="footer__item footer__item-center">
+                            <img src="../assets/image/logo_footer2.png" alt="" class="footer__item-img">
+                            <p class="footer__item-disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào
+                                việc trình bày và dàn trang phục vụ cho in ấn.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 sm-order-2 c-12">
+                        <div class="footer__item">
+                            <img src="../assets/image/footer3.png" alt="" class="footer__item-img">
+                            <h3 class="footer__item-title">PHONE & EMAIL</h3>
+                            <a href="#" class="footer__item-disc footer__item-disc-email">demoemail123@gmail.com</a>
+                            <a class="footer__item-disc footer__item-disc-phone">098 123 6541</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright__disc">© Bản quyền thuộc về
+                    <a class="copyright__link"
+                        href="http://mauweb.monamedia.net/custommade/">http://mauweb.monamedia.net/custommade/</a>
+                </p>
+            </div>
+        </div>
+
+
+
+        <a href="#container" class="back-to-top-btn hide">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <script src="../assets/script/product.js"></script>
+</body>
+
+</html>

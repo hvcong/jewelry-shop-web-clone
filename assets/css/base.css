@@ -1,0 +1,95 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --color-primary: #dd4026;
+    --color-primary-hover: #bd3119;
+    --color-btn: #e67764;
+
+    --header-height: 80px;
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.3s ease;
+    --font-family-title: 'Philosopher';
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInHeader {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+.arrow-up::before {
+    --width-border: 11px;
+    content: "";
+    position: absolute;
+    top: calc(0px - var(--width-border));
+    border-bottom: var(--width-border) solid #fff;
+    border-left: var(--width-border) solid transparent;
+    border-right: var(--width-border) solid transparent;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    font-weight: 450;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+.btn:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="container" id='container'>
+        <div class="header">
+
+            <div class="header__top hide-on-tablet-mobile">
+                <div class="grid wide">
+                    <div class="header__top-wrap">
+                        <div href="#" class="header__top-logo">
+                            <a href="#" class="header__top-logo-link">
+                                <img src="./assets/image/logo1.png" class="header__top-logo-img" alt="">
+                            </a>
+                        </div>
+                        <ul class="nav">
+                            <li class="nav__item active">
+                                <a href="#" class="nav__link">Trang Chủ</a>
+                            </li>
+                            <li class="nav__item nav__item-nav-sub">
+                                <a href="#" class="nav__link">
+                                    Giới Thiệu
+                                    <i class="nav__link-icon nav__link-icon-down fas fa-chevron-down "></i>
+                                </a>
+                                <ul class="nav__sub arrow-up">
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Nhẫn</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Bông Tai</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Dây Chuyền</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Trang Sức</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Đồng Hồ</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                        <div class="header__top-search">
+                            <i class="header__top-search-icon fas fa-search"></i>
+                            <div class="header__top-search-body arrow-up">
+                                <div class="header__top-search-group">
+                                    <input class="header__top-search-input" type="text" placeholder="Tìm kiếm..."
+                                        name="header__search" id="">
+                                    <button class="header__top-search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--begin header, nav, cart mobile + tablet -->
+            <div class="sm-header__top hide-on-pc">
+                <i class="fas fa-bars sm-header__nav-icon"></i>
+
+                <div class="sm-header__top-logo">
+                    <a href="#" class="sm-header__top-logo-link">
+                        <img src="./assets/image/logo1.png" class="sm-header__top-logo-img" alt="">
+                    </a>
+                </div>
+                <div class="sm-header__top-cart">
+                    <span class="sm-header__top-cart-num">
+                        0
+                    </span>
+                </div>
+            </div>
+            <div class="sm-header__nav-wrap hide-on-pc hide">
+                <ul class="sm-header__nav-list">
+                    <li class="sm-header__nav-item">
+                        <div class="sm-header__nav-group">
+                            <input class="sm-header__nav-search-input" type="text" placeholder="Tìm kiếm..."
+                                name="header__search" id="">
+                            <button class="sm-header__nav-search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">Trang chủ</a>
+                    </li>
+                    <li class="sm-header__nav-item active">
+                        <a href="#" class="sm-header__nav-link">giới thiệu</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">trang sức
+                            <i class="sm-header__nav-link-icon fas fa-chevron-down "></i>
+                        </a>
+                        <ul class="sm-header__subnav-list">
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Nhẫn</a>
+                            </li>
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Bông tai</a>
+                            </li>
+                            <li class="sm-header__subnav-item">
+                                <a href="#" class="sm-header__subnav-link">Dây chuyền</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">đồng hồ</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">liên hệ</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <a href="#" class="sm-header__nav-link">đăng nhập</a>
+                    </li>
+                    <li class="sm-header__nav-item">
+                        <div class="sm-header__nav-media">
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="sm-header__nav-media-link">
+                                <i class="sm-header__nav-media-icon fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <span class="sm-header__nav-close ">
+                    <i class="fas fa-times sm-header__nav-close-icon"></i>
+                </span>
+            </div>
+            <div class="sm-header__cart-wrap hide-on-pc hide">
+                <div class="sm-header__cart">
+                    <h2 class="sm-header__cart-heading">Giỏ hàng</h2>
+                    <span class="sm-header__cart-line"></span>
+                    <div class="sm-header__cart-list">
+                        <div class="sm-header__cart-item">
+                            <a href="#" class="sm-header__cart-item-link">
+                                <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            </a>
+                            <div class="sm-header__cart-item-body">
+                                <a href="#" class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA
+                                    CENTENARY
+                                    CHRONOMETER</a>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA CENTENARY
+                                    CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER OMEGA CENTENARY
+                                    CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                        <div class="sm-header__cart-item">
+                            <img src="./assets/image/home_product6.jpg" class="sm-header__cart-item-img"></img>
+                            <div class="sm-header__cart-item-body">
+                                <div class="sm-header__cart-item-name">OMEGA CENTENARY CHRONOMETER</div>
+                                <div class="sm-header__cart-item-price">
+                                    <span class="sm-header__cart-item-length">3</span> x
+                                    <span class="sm-header__cart-item-price-num">499.999</span> đ
+                                </div>
+                            </div>
+                            <span class="sm-header__cart-item-close">&times;</span>
+
+                        </div>
+                    </div>
+                    <div class="sm-header__cart-total">
+                        Tổng phụ: <span class="sm-header__cart-total-num">2,288,000</span> đ
+                    </div>
+                    <button class="sm-header__cart-btn  sm-header__cart-btn-look">Xem giỏ hàng</button>
+                    <button class="sm-header__cart-btn  sm-header__cart-btn-pay">Thanh toán</button>
+
+                </div>
+                <span class="sm-header__nav-close ">
+                    <i class="fas fa-times sm-header__nav-close-icon"></i>
+                </span>
+            </div>
+            <!--end header, nav, cart mobile + tablet -->
+            <div class="header__banner">
+                <!-- slide 1 -->
+                <div class="header__banner-slide-wrap">
+                    <div class="header__banner-item active"
+                        style=" background-image: url(./assets/image/background2.jpg)">
+                        <div class="header__banner-logo">
+                            <img class="header__banner-logo-img" src="./assets/image/logo_footer2.png" alt="">
+                        </div>
+                        <div class="header__banner-content">
+                            <h1 class="header__banner-title">Công ty gia công trang sức <br>nona Jewelry</h1>
+                            <p class="header__banner-disc">Chuyên gia công, chế tác các loại trang sức, đồng hồ theo
+                                thời
+                                trang xu hướng hiện đại</p>
+                            <a href="#" class="header__banner-link">LIÊN HỆ</a>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="header__banner-item active"
+                        style=" background-image: url(./assets/image/background3.jpg)">
+                        <div class="header__banner-logo">
+                            <img class="header__banner-logo-img" src="./assets/image/logo_footer2.png" alt="">
+                        </div>
+                        <div class="header__banner-content">
+                            <h1 class="header__banner-title">Công ty gia công trang sức</h1>
+                            <h1 class="header__banner-title">nona Jewelry</h1>
+                            <p class="header__banner-disc">Chuyên gia công, chế tác các loại trang sức, đồng hồ theo
+                                thời
+                                trang xu hướng hiện đại</p>
+                            <a href="#" class="header__banner-link">LIÊN HỆ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__slide">
+                    <div class="header__slide-btns">
+                        <div class="header__slide-btn header__slide-btn-left">
+                            <i class="header__slide-btn-icon fas fa-chevron-left"></i>
+                        </div>
+                        <div class="header__slide-btn header__slide-btn-right">
+                            <i class="header__slide-btn-icon fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__filter">
+                    <span class="header__filter-item active"></span>
+                    <span class="header__filter-item "></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main__section recommend">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-6 m-8 m-o-2 c-10 c-o-1">
+                            <div class="recommend__image">
+                                <img class="recommend__image-img" src="./assets/image/video.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="section__content">
+                                <div class="section__content-top">
+                                    <h2 class="section__content-title">GIỚI THIỆU<br>SẢN PHẨM</h2>
+                                    <span class="number__big">1</span>
+                                </div>
+                                <p class="section__content-disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả,
+                                    được
+                                    dùng vào
+                                    việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như
+                                    một
+                                    văn
+                                    bản chuẩn
+                                    cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều
+                                    đoạn
+                                    văn bản
+                                    với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn
+                                    tại
+                                    năm
+                                    thế kỉ,
+                                    mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay
+                                    đổi.
+                                    Nó
+                                    đã được
+                                    phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn
+                                    Lorem
+                                    Ipsum, và
+                                    gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</p>
+                                <a href="#" class="section__content-link btn">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main__section ring">
+                <div class="grid">
+                    <div class="ring__header">
+                        <h2 class="ring__title">SẢN PHẨM NHẪN</h2>
+                        <span class="ring__line"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col l-3 m-6 c-5 c-o-1">
+                            <div class="ring__product">
+                                <h3 class="ring__product-name">Nhẫn vàng hồng</h3>
+                                <div class="ring__product-image">
+                                    <img class="ring__product-img" src="./assets/image/home_product1.jpg" alt="">
+                                </div>
+                                <div class="ring__product-weight">
+                                    Trọng lượng:
+                                    <span class="ring__product-weight-value">24 cara</span>
+                                </div>
+                                <a href="#" class="btn ring__product-weight-link">Chi tiết</a>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12 sm-order-2">
+                            <div class="ring__center ">
+                                <div class="row no-gutters sm-pr-16 sm-pl-16 sm-pt-24">
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="ring__center-image">
+                                            <img src="./assets/image/home_product2.jpg" alt="" class="ring__center-img">
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="ring__center-image">
+                                            <img src="./assets/image/home_product3.jpg" alt="" class="ring__center-img">
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="ring__center-image">
+                                            <img src="./assets/image/home_product4.jpg" alt="" class="ring__center-img">
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 c-12">
+                                        <div class="ring__center-image">
+                                            <img src="./assets/image/home_product5.jpg" alt="" class="ring__center-img">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-5">
+                            <div class="ring__product">
+                                <h3 class="ring__product-name">Nhẫn bạc kim cương</h3>
+                                <div class="ring__product-image">
+                                    <img class="ring__product-img" src="./assets/image/home_product6.jpg" alt="">
+                                </div>
+                                <div class="ring__product-weight">
+                                    Trọng lượng:
+                                    <span class="ring__product-weight-value">24 cara</span>
+                                </div>
+                                <a href="#" class="btn ring__product-weight-link">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__section process">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="process__image">
+                                <img src="./assets/image/home_product7.jpg" alt="" class="process__img">
+                                <img src="./assets/image/home_product8.jpg" alt="" class="process__img">
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="section__content">
+                                <div class="section__content-top">
+                                    <h2 class="section__content-title">QUY TRÌNH<br>GIA CÔNG</h2>
+                                    <span class="number__big">2</span>
+                                </div>
+                                <p class="section__content-disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả,
+                                    được
+                                    dùng vào
+                                    việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như
+                                    một
+                                    văn
+                                    bản chuẩn
+                                    cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều
+                                    đoạn
+                                    văn bản
+                                    với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn
+                                    tại
+                                    năm
+                                    thế kỉ,
+                                    mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay
+                                    đổi.
+                                    gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</p>
+                                <a href="#" class="section__content-link btn">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section special">
+                <div class="grid">
+                    <div class="row no-gutters">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="row">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="special__content">
+                                        <h3 class="special__title">SẢN PHẨM ĐẶC BIỆT</h3>
+                                        <p class="special__disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được
+                                            dùng
+                                            vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử
+                                            dụng
+                                            như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500, khi một
+                                            họa
+                                            sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu văn
+                                            bản.
+                                            Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào
+                                            tin
+                                            học văn phòng, nội dung của nó vẫn không hề bị thay đổi.</p>
+                                        <a href="#" class="special__link btn">
+                                            Xem sản phẩm
+                                            <i class="section__content-icon fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="special__item"
+                                        style="background-image: url(./assets/image/special1.jpg);">
+                                        <h3 class="special__item-title">Nghệ thuật trang sức</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="special__item position-left"
+                                        style="background-image: url(./assets/image/special2.jpg);">
+                                        <h3 class="special__item-title font-23">Nhẫn loại 1</h3>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="special__item position-left"
+                                        style="background-image: url(./assets/image/special3.jpg);">
+                                        <h3 class="special__item-title font-23">Đồng hồ</h3>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="special__item"
+                                        style="background-image: url(./assets/image/special4.jpg);">
+                                        <h3 class="special__item-title font-23">Mặt dây chuyền</h3>
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="special__item"
+                                        style="background-image: url(./assets/image/special5.jpg);">
+                                        <h3 class="special__item-title font-23">Chuỗi hạt trang sức</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__section author">
+                <div class="grid">
+                    <div class="author__container">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="author__avatar">
+                                    <img src="./assets/image/author.png" alt="" class="author__avatar-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-4 m-12 sm-pt-24 sm-order-2 c-0">
+                                <p class="author__disc">
+                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và
+                                    dàn
+                                    trang
+                                    phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công
+                                    nghiệp
+                                    in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để
+                                    tạo
+                                    thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà
+                                    khi
+                                    được
+                                    áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi.
+                                </p>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="author__center">
+                                    <h3 class="author__title">Nghệ nhân điêu khắc trang sức với kinh nghiệm trên 20 năm
+                                        trong
+                                        nghề</h3>
+                                    <img class="author__signature" src="./assets/image/signature.png" alt="">
+                                    <a href="#" class="author__link btn">Liên hệ</a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 sm-order-2 m-0 c-0">
+                                <p class="author__disc">
+                                    Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và
+                                    dàn
+                                    trang
+                                    phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công
+                                    nghiệp
+                                    in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để
+                                    tạo
+                                    thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà
+                                    khi
+                                    được
+                                    áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay đổi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__section watch">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-6 m-12 sm-order-2 sm-pt-24 c-12">
+                            <div class="watch__left sm-pl-24 sm-pr-24 sm-pt-16">
+                                <div class="row no-gutters">
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="row no-gutters">
+                                            <div class="col l-6 m-6 c-6">
+                                                <a href="#" class="watch__left-link">
+                                                    <img src="./assets/image/home_product9.jpg" alt=""
+                                                        class="watch__left-img">
+                                                </a>
+                                            </div>
+                                            <div class="col l-6 m-6 c-6">
+                                                <h3 class="watch__left-content">
+                                                    <i class="fas fa-long-arrow-alt-left"></i>
+                                                    Đồng hồ OMEGA
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="row no-gutters">
+                                            <div class="col l-6 m-6 c-6">
+                                                <h3 class="watch__left-content">
+                                                    Đồng hồ ROLEX
+                                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                                </h3>
+                                            </div>
+                                            <div class="col l-6 m-6 c-6">
+                                                <a class="watch__left-link">
+                                                    <img src="./assets/image/home_product10.jpg" alt=""
+                                                        class="watch__left-img">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="section__content">
+                                <div class="section__content-top">
+                                    <h2 class="section__content-title">SẢN PHẨM<br>ĐỒNG HỒ</h2>
+                                    <span class="number__big">3</span>
+                                </div>
+                                <p class="section__content-disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả,
+                                    được
+                                    dùng vào
+                                    việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như
+                                    một
+                                    văn
+                                    bản chuẩn
+                                    cho ngành công nghiệp in ấn từ những năm 1500, khi một họa sĩ vô danh ghép nhiều
+                                    đoạn
+                                    văn bản
+                                    với nhau để tạo thành một bản mẫu văn bản. Đoạn văn bản này không những đã tồn
+                                    tại
+                                    năm
+                                    thế kỉ,
+                                    mà khi được áp dụng vào tin học văn phòng, nội dung của nó vẫn không hề bị thay
+                                    đổi.
+                                    Nó
+                                    đã được
+                                    phổ biến trong những năm 1960 nhờ việc bán những bản giấy Letraset in những đoạn
+                                    Lorem
+                                    Ipsum, và
+                                    gần đây hơn, được sử dụng trong các ứng dụng dàn trang, như Aldus PageMaker.</p>
+                                <a href="#" class="section__content-link btn">Xem sản phẩm
+                                    <i class="section__content-icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__section advise">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="advise__top">
+                                <h3 class="advise__top-heading">Tư vấn mua hàng</h3>
+                                <p class="advise__top-disc">Hãy liên hệ ngay để được tư vấn mua hàng một cách tận tình
+                                    từ đội
+                                    ngũ
+                                    nhân viên chuyên nghiệp của chúng tôi</p>
+                                <a href="#" class="advise__top-link btn">Liên hệ</a>
+                            </div>
+
+                            <div class="advise__bot">
+                                <div class="advise__bot-lable">Đăng ký nhận thông tin từ chúng tôi</div>
+                                <div class="advise__bot-group">
+                                    <input type="email" class="advise__bot-input" placeholder="Email...">
+                                    <button class="advise__bot-btn">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-4 m-6 sm-order-2  c-12">
+                        <div class="footer__item">
+                            <img src="./assets/image/footer1.png" alt="" class="footer__item-img">
+                            <h3 class="footer__item-title">ĐỊA CHỈ</h3>
+                            <p class="footer__item-disc">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                            <div class="footer__item-links">
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-facebook"></i>
+                                    <span class="footer__item-link-messa">Follow on Facebook</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-instagram"></i>
+                                    <span class="footer__item-link-messa">Follow on Instagram</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-twitter-square"></i>
+                                    <span class="footer__item-link-messa">Follow on Twitter</span>
+                                </a>
+                                <a class="footer__item-link">
+                                    <i class="footer__item-link-icon fab fa-youtube"></i>
+                                    <span class="footer__item-link-messa">Follow on Youtobe</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-12 c-10 c-o-1">
+                        <div class="footer__item footer__item-center">
+                            <img src="./assets/image/logo_footer2.png" alt="" class="footer__item-img">
+                            <p class="footer__item-disc">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào
+                                việc trình bày và dàn trang phục vụ cho in ấn.</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-4 m-6 sm-order-2 c-12">
+                        <div class="footer__item">
+                            <img src="./assets/image/footer3.png" alt="" class="footer__item-img">
+                            <h3 class="footer__item-title">PHONE & EMAIL</h3>
+                            <a href="#" class="footer__item-disc footer__item-disc-email">demoemail123@gmail.com</a>
+                            <a class="footer__item-disc footer__item-disc-phone">098 123 6541</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="copyright__disc">© Bản quyền thuộc về
+                    <a class="copyright__link"
+                        href="http://mauweb.monamedia.net/custommade/">http://mauweb.monamedia.net/custommade/</a>
+                </p>
+            </div>
+        </div>
+
+        <a href="#container" class="back-to-top-btn hide">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+    <script src="./assets/script/main.js"></script>
+</body>
+
+</html>
