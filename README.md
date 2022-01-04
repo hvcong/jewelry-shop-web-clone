@@ -1,3 +1,3 @@
 # Jewelry-Web
-This is a jevwelry web
-It uses simple html, css, vanilla js
+This is a jewelry web static
+It use simple html, css, vanilla js
